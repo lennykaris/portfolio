@@ -125,3 +125,155 @@ header{
     object-fit: cover;
     width: 100%;
 }
+/* General Styling (applies to all pages) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center / cover;
+    padding: 50px 5%;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    padding: 50px 5%;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 35px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav a:hover,
+.navbar-nav .active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Section Styling for Pages */
+
+section h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* About Page */
+.about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projects Page */
+.projects ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.projects ul li {
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.projects ul li:hover {
+    transform: translateY(-5px);
+}
+
+.projects ul li h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.projects ul li p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Contact Page */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.contact input,
+.contact textarea {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    resize: none;
+}
+
+.contact button {
+    background: #4badf4;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #3a8bd6;
+}
